@@ -1,6 +1,6 @@
 <?php
 
-    if(is_dir("./install")) {
+    if(is_dir("./install") && is_readable("./install")) {
         header('Location: '.$_SERVER['REQUEST_URI'].'install');
         exit;
     }
